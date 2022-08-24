@@ -3,10 +3,11 @@ abstract type AbstractCompositeScalarFunction <: AbstractScalarFunction end
 elements(f::AbstractCompositeScalarFunction) = f.elements
 getindex(f::AbstractCompositeScalarFunction, i) = getindex(elements(f), i)
 
+eltype(f::AbstractCompositeScalarFunction) = eltype(elements(f))
 ncoefficients(f::AbstractScalarFunction) = 0
 ncoefficients(f::AbstractCompositeScalarFunction) = sum(ncoefficients(x) for x in f)
 
-import Base: iterate,//
+import Base: iterate,//, eltype
 iterate(f::AbstractCompositeScalarFunction,args...) = iterate(elements(f),args...)
 
 struct ScalarSum{T} <: AbstractCompositeScalarFunction
