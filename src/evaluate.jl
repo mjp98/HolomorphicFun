@@ -1,8 +1,8 @@
 function evaluate_close(f, z::T; ε=100epsreal(T)) where {T}
-    evaluate(f, z + ε)
+    return evaluate(f, z + ε)
 end
 function evaluate_close(f, z::T, args...; ε=100epsreal(T)) where {T}
-    evaluate(f, z + ε, args...)
+    return evaluate(f, z + ε, args...)
 end
 function evaluate_safe(f, z::T; ε=100epsreal(T)) where {T}
     small = 100ε
