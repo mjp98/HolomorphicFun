@@ -14,6 +14,8 @@ TaylorSeries = "6aa5eb33-94cf-58f4-a9d0-e4b2c4fc25ea"
 
 [compat]
 julia = "1.7, 1.8"
+DomainSets = "0.5.11"
+ApproxFun = "0.13.5"
 
 [extras]
 ApproxFun = "28f2ccd6-bb30-5033-b560-165f7b14dc2f"

@@ -9,6 +9,7 @@ version = "1.2.1"
 [[ApproxFun]]
 deps = ["AbstractFFTs", "ApproxFunBase", "ApproxFunFourier", "ApproxFunOrthogonalPolynomials", "ApproxFunSingularities", "Calculus", "DomainSets", "DualNumbers", "FFTW", "FastTransforms", "LinearAlgebra", "RecipesBase", "Reexport", "SpecialFunctions"]
 git-tree-sha1 = "979c7838b3de22859236c8411536749ac8e10143"
+pinned = true
 uuid = "28f2ccd6-bb30-5033-b560-165f7b14dc2f"
 version = "0.13.5"
 
